@@ -1,4 +1,7 @@
 def hello_t(array)
+  if !block_given?
+    return puts "Hey! No block was given!"
+  end
   i = 0
 
   while i < array.length
